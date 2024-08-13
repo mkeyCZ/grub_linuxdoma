@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Cesta k obrázku v domovském adresáři
-WALLPAPER_PATH="$HOME/boot_wallpaper/boot_wallpaper.png"
+WALLPAPER_PATH="$HOME/grub_linuxdoma/boot_wallpaper.png"
 
 # Cílová cesta v /boot/grub/
 GRUB_WALLPAPER_PATH="/boot/grub/background.png"
@@ -22,6 +22,6 @@ sudo cp "$WALLPAPER_PATH" "$GRUB_WALLPAPER_PATH"
 sudo sed -i "/GRUB_BACKGROUND=/c\GRUB_BACKGROUND=\"$GRUB_WALLPAPER_PATH\"" /etc/default/grub
 
 # Aktualizace konfigurace GRUB
-sudo update-grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 echo "Obrázek byl úspěšně nastaven jako pozadí GRUB."
