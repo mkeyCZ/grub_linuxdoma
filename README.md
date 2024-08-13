@@ -25,11 +25,11 @@ Tento skript je navržen tak, aby zjednodušil proces přizpůsobení GRUB bootl
    - Stáhněte nebo klonujte tento repozitář.
    - Udělte skriptu spustitelná práva příkazem:
      ```bash
-     chmod +x set_grub_wallpaper.sh
+     chmod +x grub_skript.sh
      ```
    - Spusťte skript příkazem:
      ```bash
-     ./set_grub_wallpaper.sh
+     ./grub_skript.sh
      ```
 
 Skript automaticky nastaví váš obrázek jako pozadí GRUB a provede potřebné úpravy konfigurace.
